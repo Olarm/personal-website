@@ -14,17 +14,23 @@ section:nth-child(1) {
     background: #f8f9fa;
 }
 section:nth-child(2) {
-    background: #495057;
+    background: #f8f9fa;
 }
 section:nth-child(3) {
-    background: #495057;
+    background: #f8f9fa;
     height: 80vh;
 }
 section:nth-child(4) {
-    background: #495057;
+    background: #f8f9fa;
 }
 section:nth-child(5) {
+    background: #495057;
+}
+section:nth-child(6) {
     background: #f8f9fa;
+}
+section:nth-child(7) {
+    background: #495057;
 }
 
 h1 {
@@ -96,6 +102,26 @@ a.nav-link:focus{
     margin: 0;
     padding: 0;
 }
+
+.parallax {
+  /* The image used */
+  background-image: url("images/IMG_20210704_145145.jpg");
+
+  /* Set a specific height */
+  min-height: 700px;
+
+  max-width:100%;
+  display: grid;
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5);
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .imgbox img {
     max-width:100%;
     display: grid;
@@ -118,4 +144,9 @@ a.nav-link:focus{
 .center-fit {
     max-width: 100%;
     margin: auto;
+}
+
+.logoimg {
+    max-width:20%;
+    background-color: white;
 }

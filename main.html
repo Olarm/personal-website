@@ -11,8 +11,12 @@
 	<!-- JQuery -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+	<!-- Waypoints -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   <!-- Font awesome -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -33,36 +37,43 @@
 <nav class="navbar my_navbar navbar-expand-lg fixed-top">
   <div class="collapse navbar-collapse mx-auto w-auto justify-content-center" id="navbarNavAltMarkup">
     <a class="nav-link active" href="#about">About <span class="sr-only">(current)</span></a>
-    <a class="nav-link" href="#">Experience</a>
-    <a class="nav-link" href="#rnd">Research</a>
+    <a class="nav-link" href="#experience">Experience</a>
+    <a class="nav-link" href="#research">Research</a>
     <a class="nav-link" href="#projects">Projects</a>
   </div>
 </nav>
 
 <section>
-
  <div id="topimg" class="imgbox">
-     <img class="center-fit" src="images/IMG_20210704_145145.jpg">
+	 		<div class="parallax"></div>
+     <!--<img class="center-fit" src="images/IMG_20210704_145145.jpg">-->
 		 <p>Hi! I'm Ola</p>
  </div>
 </section>
 
-
 <section id="about">
+	<h1>This is a Heading</h1>
+	<p>This is a paragraph.</p>
+	<div id="ntnu" class="logoimg">
+	<img class="center-fit" src="images/ntnu_alt_versjon_uten_slagord.png">
+ 	</div>
+</section>
+
+<section id="experience" class="waypoint">
 <h1>This is a Heading</h1>
 <p>This is a paragraph.</p>
 </section>
 
-<section>
+<section id="research" class="waypoint">
   <div class="white_back">
-    <h1 id="rnd">Master thesis</h1>
+    <h1>Master thesis</h1>
     <p>My thesis is titled: <i>Hamiltonian Monte Carlo for inferring the finite-dimensional parameter space
       of a one- dimensional model of heat pulses propagating in fluid flow</i></p>
     <img class="model1d" src="images/1d_model.png" alt="1d model">
   </div>
 </section>
 
-<section id="projects">
+<section id="projects" class="waypoint">
 <h1>Projects</h1>
 <h4>Home automation</h4>
 <ul>
@@ -149,6 +160,38 @@ $(function () {
 	  $nav.toggleClass("scrolled", $(this).scrollTop() > $img.height());
 	});
 });
+
+
+/*----------------------------------------------------*/
+/* Highlight the current section in the navigation bar
+------------------------------------------------------*/
+
+/*----------------------------------------------------*/
+/* Highlight the current section in the navigation bar
+------------------------------------------------------*/
+
+	var sections = $("section");
+	var navigation_links = $("a.nav-link");
+
+	sections.waypoint({
+
+      handler: function(event, direction) {
+
+		   var active_section;
+
+			active_section = $(this);
+			if (direction === "up") active_section = active_section.prev();
+
+			var active_link = $('#nav a[href="#' + active_section.attr("id") + '"]');
+
+         navigation_links.parent().removeClass("current");
+			active_link.parent().addClass("current");
+
+		},
+		offset: '35%'
+
+	});
+
 </script>
 
 
