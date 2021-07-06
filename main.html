@@ -311,7 +311,7 @@ $(function () {
   $(document).scroll(function () {
 	  var $nav = $(".my_navbar");
 		var $img = $("#topimg");
-	  $nav.toggleClass("scrolled", $(this).scrollTop() > $img.height());
+	  $nav.toggleClass("scrolled", $(this).scrollTop() > ($img.height() - 1.5*$nav.height()));
 	});
 });
 
