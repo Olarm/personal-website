@@ -105,7 +105,7 @@ a.nav-link:focus{
 
 .parallax {
   /* The image used */
-  background-image: url("images/bakgrunn.jpg");
+  background-image: url("../images/bakgrunn.jpg");
 
   /* Set a specific height */
   min-height: 100vh;
