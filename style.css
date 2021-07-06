@@ -108,15 +108,15 @@ a.nav-link:focus{
 
 .parallax {
   /* The image used */
-  background-image: url("images/IMG_20210704_145145.jpg");
+  background-image: url("images/bakgrunn.jpg");
 
   /* Set a specific height */
-  min-height: 700px;
+  min-height: 100vh;
 
   max-width:100%;
   display: grid;
-  -webkit-filter: brightness(0.5);
-  filter: brightness(0.5);
+  -webkit-filter: brightness(0.8);
+  filter: brightness(0.8);
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -151,6 +151,7 @@ a.nav-link:focus{
 
 .logoimg {
     max-width: 100%;
+    border-radius: 25px;
     background-color: white;
 }
 
