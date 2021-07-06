@@ -26,12 +26,9 @@ section:nth-child(4) {
     height: 100%;
 }
 section:nth-child(5) {
-    background: #495057;
-}
-section:nth-child(6) {
     background: #f8f9fa;
 }
-section:nth-child(7) {
+section:nth-child(6) {
     background: #495057;
 }
 
@@ -57,13 +54,13 @@ p {
 }
 
 a.nav-link:hover {
-    color: #23a8b4;
+    color: #065a60;
 }
 a.nav-link:active {
-    color: #23a8b4;
+    color: #065a60;
 }
 a.nav-link:focus{
-    color: #23a8b4;
+    color: #065a60;
 }
 
 .white_back {
