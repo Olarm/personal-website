@@ -1,11 +1,7 @@
 //Get the button
 var mybutton = document.getElementById("myBtn");
 
-if (!isMobile()) {
-//place script you don't want to run on mobile here
 
-window.onscroll = function() {scrollFunction()};
-}
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
