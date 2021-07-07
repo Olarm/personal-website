@@ -241,9 +241,11 @@ a.nav-link:focus{
   background-image: url("DSC_0184.JPG");
 
   /* Set a specific height */
+  /*min-height: 100vh;*/
+  height: auto;
   min-height: 100vh;
 
-  max-width:100%;
+  width: 100%;
   display: grid;
   -webkit-filter: brightness(0.5);
   filter: brightness(0.5);
@@ -289,4 +291,11 @@ a.nav-link:focus{
 
 .history {
     max-width:75%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
 }
