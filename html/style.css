@@ -180,6 +180,13 @@ p {
     width: 100%;
 }
 
+#about p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+
 .fixed-top.scrolled {
   background-color: #212529 !important;
   transition: background-color 200ms linear;
@@ -242,7 +249,7 @@ a.nav-link:focus{
 
 .parallax {
   /* The image used */
-  background-image: url("DSC_0184.JPG");
+  background-image: url("wip_wide.jpg");
 
   /* Set a specific height */
   /*min-height: 100vh;*/
@@ -301,5 +308,8 @@ a.nav-link:focus{
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
+  }
+  [class*="parallax"] {
+    background-image: url("wip_tall.jpg");
   }
 }
