@@ -198,13 +198,13 @@ p {
 }
 
 a.nav-link:hover {
-    color: #065a60;
+    color: #11ABB0;
 }
 a.nav-link:active {
-    color: #065a60;
+    color: #11ABB0;
 }
 a.nav-link:focus{
-    color: #065a60;
+    color: #11ABB0;
 }
 
 .white_back {
