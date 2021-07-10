@@ -24,6 +24,9 @@
   <link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
   <script src="https://tikzjax.com/v1/tikzjax.js"></script>
 
+	<!-- Leader line-->
+	<script src="leader-line/leader-line.min.js"></script>
+
   <!-- Custom styling -->
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
@@ -253,10 +256,141 @@
 	<li>Services: website, database, backups, email server, email lists, sms server, docker, nginx</li>
 	<li>Description</li>
 </ul>
+
+<div class="py-5 m-0 row justify-content-md-center">
+<div id="ex-020" class="stage" style="width: 800px; height: 400px;">
+	<div id="ex-020-a" class="fig" style="left: 300px; top: 160px;"><i class="fas fa-home fa-4x"></i></div>
+	<div class="fig" style="left: 80px; top: 120px;">
+		<img id="ex-020-b" src="wifi.jpg" alt="wifi.jpg" width="80px">
+	</div>
+	<div class="fig" style="left: 360px; top: 0px;">
+		<img id="ex-020-c" src="zwave.png" alt="zwave.png" width="80px">
+	</div>
+  <div id="ex-020-d" class="anchor40" style="left: 10px; top: 200px;"></div>
+  <div id="ex-020-e" class="anchor40" style="left: 80px; top: 320px;"></div>
+  <div id="ex-020-f" class="anchor40" style="left: 480px; top: 80px;"></div>
+  <div id="ex-020-g" class="fig" style="left: 720px; top: 10px;"></div>
+  <div id="ex-020-h" class="anchor40" style="left: 510px; top: 300px;"></div>
+  <div id="ex-020-frame">
+    <div>
+      <p style="padding: 5px; text-align: center;">Scroll this</p>
+      <div id="ex-020-i" class="anchor40" style="left: 70px; top: 250px;"></div>
+    </div>
+  </div>
+  <div id="ex-020-j" class="anchor40" style="left: 10px; top: 30px; width: auto; height: auto; font-size: 20px; background-size: 12px 12px; background-repeat: no-repeat; background-color: rgb(248, 248, 129); cursor: default; padding-right: 15px; padding-left: 2px; background-position: right 2px top 2px;">Move mouse here</div>
+</div>
+</div>
+
 </section>
 
 <script src="scripts.js" type="text/javascript" language="JavaScript"></script>
 
+<script>
+window.addEventListener('load', function() {
+  'use strict';
+
+  new LeaderLine(
+    document.getElementById('ex-020-a'),
+    document.getElementById('ex-020-b'),
+    {
+      color: '#ef1e28',
+      startPlug: 'square',
+      endPlug: 'arrow2',
+      startPlugColor: '#43bc5b',
+      endPlugColor: '#1085e0',
+      startPlugSize: 1.5,
+      endPlugSize: 1.5,
+    }
+  );
+
+  new LeaderLine(
+    document.getElementById('ex-020-f'),
+    document.getElementById('ex-020-g'),
+    {
+      size: 8,
+      startPlugColor: '#ffff05',
+      endPlugColor: '#0c7d1a',
+      gradient: true
+    }
+  );
+
+  new LeaderLine(
+    document.getElementById('ex-020-c'),
+    document.getElementById('ex-020-d'),
+    {
+      color: 'black',
+      startPlug: 'disc',
+      endPlug: 'hand',
+      path: 'grid'
+    }
+  );
+
+  new LeaderLine(
+    document.getElementById('ex-020-h'),
+    document.getElementById('ex-020-f'),
+    {
+      size: 6,
+      outlineColor: '#1e71ef',
+      outline: true,
+      endPlugOutline: true,
+      dash: true,
+      path: 'arc',
+      startSocket: 'left',
+      endSocket: 'bottom'
+    }
+  );
+
+  new LeaderLine(
+    document.getElementById('ex-020-e'),
+    document.getElementById('ex-020-c'),
+    {
+      color: '#ecf373',
+      dropShadow: true,
+      endSocket: 'bottom'
+    }
+  );
+
+  var lineC = new LeaderLine(
+    document.getElementById('ex-020-c'),
+    document.getElementById('ex-020-b'),
+    {
+      path: 'straight'
+      // dash: {animation: true}
+    }
+  );
+  inView('#ex-020')
+    .on('enter', function() { lineC.dash = {animation: true}; })
+    .on('exit', function() { lineC.dash = false; });
+
+  new LeaderLine(
+    document.getElementById('ex-020-f'),
+    document.getElementById('ex-020-c'),
+    {
+      startPlug: 'arrow1',
+      startSocket: 'left',
+      endSocket: 'right',
+      startSocketGravity: [-140, -80],
+      endSocketGravity: [220, 180]
+    }
+  );
+
+  var lineH = new LeaderLine(
+    document.getElementById('ex-020-h'),
+    document.getElementById('ex-020-i')
+  );
+  document.getElementById('ex-020-frame').addEventListener('scroll', AnimEvent.add(function() {
+    lineH.position();
+  }), false);
+
+  new LeaderLine(
+    LeaderLine.mouseHoverAnchor(document.getElementById('ex-020-j'), 'draw', {style: {backgroundImage: null}}),
+    document.getElementById('ex-020-h'),
+    {color: 'rgba(255, 127, 80, 0.8)'}
+  );
+
+});
+
+</script>
 
 </body>
 </html>
