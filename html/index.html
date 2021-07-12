@@ -60,7 +60,7 @@
 		<div class="col-5">
 			<div class"about">
 				<p>
-				Former bartender, ski instructor and psychiatric nursing assistant now making my way as an
+				Former bartender, ski instructor and nursing assistant now making my way as an
 				engineer in the realms of control systems and big data with a little web-development on the side.
 				Until lately I easily fit into the category of <i>eternal student</i> having studied within
 				3 different fields at 4 different universities. The next section details some of my most recent
@@ -86,7 +86,7 @@
 		 	</div>
 	    <div class="col-5">
 				<h3>Wellstarter</h3>
-				<p>Software engineer, 2018-2021</p>
+				<p>Software engineer, 2018-</p>
 				<p>Trondheim, Norway</p>
 				<br>
 				<p>
@@ -187,7 +187,7 @@
 			</div>
 			<div class="col-5">
 				<h3>The Arctic University of Norway</h3>
-				<p>B.Sc. in Nursing 2012-2014 (Not completed)</p>
+				<p>B.Sc. in Nursing 2011-2013 (Not completed)</p>
 				<p>Narvik, Norway</p>
 				<br>
 				<p>
@@ -259,27 +259,27 @@
 
 <div class="py-5 m-0 row justify-content-md-center">
 <div id="ex-020" class="stage" style="width: 800px; height: 400px;">
-	<div id="ex-020-a" class="fig" style="left: 300px; top: 160px;"><i class="fas fa-home fa-4x"></i></div>
 	<div class="fig" style="left: 80px; top: 120px;">
-		<img id="ex-020-b" src="wifi.jpg" alt="wifi.jpg" width="80px">
+		<img id="wifi_block" src="wifi_logo.svg.png" alt="wifi_logo.svg.png" width="80px">
 	</div>
 	<div class="fig" style="left: 360px; top: 0px;">
-		<img id="ex-020-c" src="zwave.png" alt="zwave.png" width="80px">
+		<img id="zwave_block" src="zwave.png" alt="zwave.png" width="80px">
 	</div>
 	<div class="fig" style="left: 10px; top: 200px;">
-		<img id="ex-020-d" src="mqtt-logo.png" alt="mqtt-logo.png" width="80px">
+		<img id="mqtt_block" src="mqtt-logo.png" alt="mqtt-logo.png" width="80px">
 	</div>
-  <div id="ex-020-e" class="anchor40" style="left: 80px; top: 320px;"></div>
-  <div id="ex-020-f" class="anchor40" style="left: 480px; top: 80px;"></div>
-  <div id="ex-020-g" class="fig" style="left: 720px; top: 10px;"></div>
-  <div id="ex-020-h" class="anchor40" style="left: 510px; top: 300px;"></div>
-  <div id="ex-020-frame">
-    <div>
-      <p style="padding: 5px; text-align: center;">Scroll this</p>
-      <div id="ex-020-i" class="anchor40" style="left: 70px; top: 250px;"></div>
-    </div>
+  <div class="fig" style="left: 80px; top: 320px;">
+    <img id="hass_block" src="hass_logo.png" alt="hass_logo.png" width="80px">
   </div>
-  <div id="ex-020-j" class="anchor40" style="left: 10px; top: 30px; width: auto; height: auto; font-size: 20px; background-size: 12px 12px; background-repeat: no-repeat; background-color: rgb(248, 248, 129); cursor: default; padding-right: 15px; padding-left: 2px; background-position: right 2px top 2px;">Move mouse here</div>
+	<div class="fig" style="left: 480px; top: 80px;">
+		<img id="hass_block_2" src="hass_logo.png" alt="hass_logo2.png" width="80px">
+	</div>
+	<div class="fig" style="left: 720px; top: 10px;">
+		<img id="telegram_block" src="telegram_logo.png" alt="telegram_logo.png" width="80px">
+	</div>
+	<div class="fig" style="left: 520px; top: 10px;">
+		<img id="api_block" src="api_logo.png" alt="api_logo.png" width="80px">
+	</div>
 </div>
 </div>
 
@@ -292,22 +292,21 @@ window.addEventListener('load', function() {
   'use strict';
 
   new LeaderLine(
-    document.getElementById('ex-020-a'),
-    document.getElementById('ex-020-b'),
+    document.getElementById('hass_block'),
+    document.getElementById('wifi_block'),
     {
-      color: '#ef1e28',
-      startPlug: 'square',
-      endPlug: 'arrow2',
-      startPlugColor: '#43bc5b',
-      endPlugColor: '#1085e0',
+      color: '#11ABB0',
+      startPlug: 'arrow1',
+      startPlugColor: '#11ABB0',
+      endPlugColor: '#11ABB0',
       startPlugSize: 1.5,
       endPlugSize: 1.5,
     }
   );
 
   new LeaderLine(
-    document.getElementById('ex-020-f'),
-    document.getElementById('ex-020-g'),
+    document.getElementById('hass_block_2'),
+    document.getElementById('telegram_block'),
     {
       size: 8,
       startPlugColor: '#ffff05',
@@ -317,8 +316,8 @@ window.addEventListener('load', function() {
   );
 
   new LeaderLine(
-    document.getElementById('ex-020-c'),
-    document.getElementById('ex-020-d'),
+    document.getElementById('zwave_block'),
+    document.getElementById('mqtt_block'),
     {
       color: 'black',
       startPlug: 'disc',
@@ -329,7 +328,7 @@ window.addEventListener('load', function() {
 
   new LeaderLine(
     document.getElementById('ex-020-h'),
-    document.getElementById('ex-020-f'),
+    document.getElementById('hass_block_2'),
     {
       size: 6,
       outlineColor: '#1e71ef',
@@ -343,8 +342,8 @@ window.addEventListener('load', function() {
   );
 
   new LeaderLine(
-    document.getElementById('ex-020-e'),
-    document.getElementById('ex-020-c'),
+    document.getElementById('hass_block'),
+    document.getElementById('zwave_block'),
     {
       color: '#ecf373',
       dropShadow: true,
@@ -353,8 +352,8 @@ window.addEventListener('load', function() {
   );
 
   var lineC = new LeaderLine(
-    document.getElementById('ex-020-c'),
-    document.getElementById('ex-020-b'),
+    document.getElementById('zwave_block'),
+    document.getElementById('wifi_block'),
     {
       path: 'straight'
       // dash: {animation: true}
@@ -365,8 +364,8 @@ window.addEventListener('load', function() {
     .on('exit', function() { lineC.dash = false; });
 
   new LeaderLine(
-    document.getElementById('ex-020-f'),
-    document.getElementById('ex-020-c'),
+    document.getElementById('hass_block_2'),
+    document.getElementById('zwave_block'),
     {
       startPlug: 'arrow1',
       startSocket: 'left',
@@ -376,19 +375,6 @@ window.addEventListener('load', function() {
     }
   );
 
-  var lineH = new LeaderLine(
-    document.getElementById('ex-020-h'),
-    document.getElementById('ex-020-i')
-  );
-  document.getElementById('ex-020-frame').addEventListener('scroll', AnimEvent.add(function() {
-    lineH.position();
-  }), false);
-
-  new LeaderLine(
-    LeaderLine.mouseHoverAnchor(document.getElementById('ex-020-j'), 'draw', {style: {backgroundImage: null}}),
-    document.getElementById('ex-020-h'),
-    {color: 'rgba(255, 127, 80, 0.8)'}
-  );
 
 });
 
