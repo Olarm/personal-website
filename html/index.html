@@ -194,7 +194,7 @@
 					During my time in the infantry i was fortunate to receive an advanced course in first-aid.
 					Coupled with my interest for mountaineering and wildlife and an urge towards helping others,
 					I started studying nursing with the aim of working in pre-hospital and emergency care.
-					However I found that the sometimes rigid and conservative structure in healthcare coupled with strict 
+					However I found that the sometimes rigid and conservative structure in healthcare coupled with strict
                     boundaries on careers didn't suit me very well.
                 </p>
 				<br>
@@ -247,8 +247,38 @@
 <ul>
 	<li>Github</li>
 	<li>Tools: html, javascript, jquery, css, bootstrap5</li>
+	<li>Hardware: Raspberry pi, UPS,
 	<li>Description</li>
 </ul>
+<p>
+	I started building a system at a family cabin in 2017 with a hardware stack
+	constisting of a raspberry pi, a z-wave stick and a various z-wave compatible sensors.
+	I set up homeassistant using Docker and published the site using Nginx.
+	In the years since the system has grown to encompass 2 cabins and my family home
+	with the list of hardware now being:
+	<ul>
+		<li>2 Asus barebone machines</li>
+		<li>2 UPS'es</li>
+		<li>7 raspberry pi's</li>
+		<li>5 pi cameras</li>
+		<li>7 multisensors (temperature, PIR, light, pressure, humidity)</li>
+		<li>8 smoke detectors, 5 with temperature sensor</li>
+		<li>6 wall plugs</li>
+		<li>12 thermostats</li>
+	</ul>
+	The 5 pi's running cameras either livestream video or capture image/video on request.
+	One of the cabins depend on gms/4g making livestreaming a bit costly datawise.
+	The 3 homes each have a dedicated server with the 2 cabins having UPS'es and using
+	Asus machines rather than pi's. This is due to the weakness in the sd-card, causing
+	the pi's to suddenly crash after a few years, always when noone are present.
+	The software stack for the servers at each home are:
+	<ul>
+		<li>Docker</li>
+		<li>Homeassistant</li>
+		<li>PostgreSQL</li>
+		<li>Nginx (except for the cabin on mobile net)</li>
+	<ul>
+</p>
 <h4>Cloud transfer</h4>
 <ul>
 	<li>Tools</li>
