@@ -164,7 +164,9 @@ section:nth-child(6) {
     background: #f8f9fa;
 }
 section:nth-child(7) {
-    background: #495057;
+    background: #f8f9fa;
+    color: black;
+    height: 100%;
 }
 
 h1, h2, h3 {
