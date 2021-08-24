@@ -229,56 +229,76 @@
 <section id="projects" class="waypoint">
 <h1>Projects</h1>
 <p>Things i do, not because they are easy, but usually because i thought they would be.</p>
-<h4>Athos</h4>
-<ul>
-	<li>Purpose</li>
-	<li>Tools</li>
-	<li>Description</li>
-</ul>
-<h4>Home automation</h4>
-<ul>
-	<li>Github</li>
-	<li>Tools: html, javascript, jquery, css, bootstrap5</li>
-	<li>Hardware: Raspberry pi, UPS,
-	<li>Description</li>
-	<li>State machines: Home/away, coffe machine, lighting etc.</li>
-</ul>
-<p>
-	I started building a system at a family cabin in 2017 with a hardware stack
-	constisting of a raspberry pi, a z-wave stick and a various z-wave compatible sensors.
-	I set up homeassistant using Docker and published the site using Nginx.
-	In the years since the system has grown to encompass 2 cabins and my family home
-	with the list of hardware now being:
-	<ul>
-		<li>2 Asus barebone machines</li>
-		<li>2 UPS'es</li>
-		<li>7 raspberry pi's</li>
-		<li>5 pi cameras</li>
-		<li>7 multisensors (temperature, PIR, light, pressure, humidity)</li>
-		<li>8 smoke detectors, 5 with temperature sensor</li>
-		<li>6 wall plugs</li>
-		<li>12 thermostats</li>
-	</ul>
-	The 5 pi's running cameras either livestream video or capture image/video on request.
-	One of the cabins depend on gms/4g making livestreaming a bit costly datawise.
-	The 3 homes each have a dedicated server with the 2 cabins having UPS'es and using
-	Asus machines rather than pi's. This is due to the weakness in the sd-card, causing
-	the pi's to suddenly crash after a few years, always when noone are present.
-	The software stack for the servers at each home are:
-	<ul>
-		<li>Docker</li>
-		<li>Homeassistant</li>
-		<li>PostgreSQL</li>
-		<li>Nginx (except for the cabin on mobile net)</li>
-	<ul>
-</p>
-<h4>Cloud transfer</h4>
-<ul>
-	<li>Tools</li>
-	<li>Services: website, database, backups, email server, email lists, sms server, docker, nginx</li>
-	<li>Description</li>
-</ul>
 
+<div class="py-5 m-0 row justify-content-md-center">
+	<div class="col-5">
+		<h4>Athos</h4>
+		Wellstarter needed a system to individually track each component in systems sold to customers and installed in oil wells.
+		I've made an attempt at creating such a system using Python Django along with PostgreSQL. The full list of technologies
+		in the stack are:
+
+		<ul>
+			<li>Google cloud</li>
+			<li>Docker</li>
+			<li>Gunicorn</li>
+			<li>Python Django</li>
+			<li>PostgreSQL</li>
+			<li>MS Graph</li>
+			<li>Java script + JQuery</li>
+			<li>CSS + bootstrap 4</li>
+			<li>HTML5</li>
+		</ul>
+
+		Central to the backend is a recursive table structure defining individual components and assemblies.
+		A corresponding recursive structure represents actual components that can be acquired throigh purchase orders
+		or work orders. Components are tracked by connecting with a timestamp and an event which can for example be
+		the component being destroyed in a test, made part of an assembly or passing through a country.
+		Purchase orders for assemblies can include components sent from Wellstarter storage.
+		A system for registering tests and tests results is also implemented including a micro-service for uploading
+		live data from experiments and tests. Other features
+	</div>
+</div>
+
+<div class="py-5 m-0 row justify-content-md-center">
+	<div class="col-5">
+		<h4>Home automation</h4>
+		<ul>
+			<li>Github</li>
+			<li>Tools: html, javascript, jquery, css, bootstrap5</li>
+			<li>Hardware: Raspberry pi, UPS,
+			<li>Description</li>
+			<li>State machines: Home/away, coffe machine, lighting etc.</li>
+		</ul>
+			I started building a system at a family cabin in 2017 with a hardware stack
+			constisting of a raspberry pi, a usb z-wave stick and a various z-wave compatible sensors.
+			I set up homeassistant using Docker and published the site using Nginx.
+			In the years since the system has grown to encompass 2 cabins and my family home
+			with the list of hardware now being:
+			<ul>
+				<li>2 Asus barebone machines</li>
+				<li>2 UPS'es</li>
+				<li>7 raspberry pi's</li>
+				<li>5 pi cameras</li>
+				<li>7 multisensors (temperature, PIR, light, pressure, humidity)</li>
+				<li>8 smoke detectors, 5 with temperature sensor</li>
+				<li>6 wall plugs</li>
+				<li>12 thermostats</li>
+				<li>1 weather station</li>
+			</ul>
+			The 5 pi's running cameras either livestream video or capture image/video on request.
+			One of the cabins depend on gsm/4g making livestreaming a bit costly datawise.
+			The 3 homes each have a dedicated server with the 2 cabins having UPS'es and using
+			barebone machines rather than pi's. This is partly due to the weakness of the sd-card, causing
+			the pi's to suddenly crash after a few years, always when noone are present.
+			The software stack for the servers at each home are:
+			<ul>
+				<li>Docker</li>
+				<li>Homeassistant</li>
+				<li>PostgreSQL</li>
+				<li>Nginx (except for the cabin on mobile net)</li>
+			<ul>
+	</div>
+</div>
 <div class="py-5 m-0 row justify-content-md-center">
 <div id="ex-020" class="stage" style="width: 800px; height: 400px;">
 	<div class="fig" style="left: 80px; top: 120px;">
@@ -304,6 +324,19 @@
 	</div>
 </div>
 </div>
+
+<div class="py-5 m-0 row justify-content-md-center">
+	<div class="col-5">
+		<h4>Cloud transfer</h4>
+		<ul>
+			<li>Tools</li>
+			<li>Services: website, database, backups, email server, email lists, sms server, docker, nginx</li>
+			<li>Description</li>
+		</ul>
+	</div>
+</div>
+
+
 
 </section>
 
