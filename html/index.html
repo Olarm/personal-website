@@ -74,6 +74,32 @@
 
 <section id="experience">
 	<div class="container">
+		<!-- Moen Marin -->
+		<div class="py-5 row justify-content-md-center">
+	    <div class="col col-md-3">
+				<div id="mm">
+					<a href="http://www.moenmarin.no">
+						<img class="center-fit logoimg" src="MM_SoMe_moerk.jpg">
+					</a>
+			 	</div>
+		 	</div>
+	    <div class="col-5">
+				<h3>Moen Marin</h3>
+				<p>Backend-/IoT-developer, 2021-</p>
+				<p>Trondheim, Norway</p>
+				<br>
+				<p>
+                Moen Marin is the world’s largest supplier of working boats to the aquaculture industry, 
+                leading the way in electrification and digitalization of the fishing and aquaculture fleet.
+				</p>
+				<br>
+				<p>
+                I work on Moen's edge and cloud infrastructure to provide data and analysis from service vessels.
+                I've also managed several internal projects in Moen marin ranging from IT projects to research projects 
+                aimed at improving Moen Marin's digital offering both onboard and in the cloud.
+				</p>
+	 		</div>
+	 	</div>
 
 		<!-- Wellstarter -->
 		<div class="py-5 row justify-content-md-center">
@@ -101,14 +127,11 @@
 					I started working part-time at Wellstarter to develop an ERP solution.
 					Being an oil and gas service company, Wellstarter is expected to provide
 					detailed information on every part of its product such as material
-					certificates, logistics tracking, production process and testing. I
-					was given free reigns in approaching this which ment complete freedom
-					in how the end product should appear and what tools to use. You can read more
-					about this project in the projects section.
+					certificates, logistics tracking, production process and product testing.
 				</p>
 				<br>
 				<p>
-					During my final year at NTNU i also cooperated with Wellstarter on both my
+					During my final year at NTNU i cooperated with Wellstarter on both my
 					project and master thesis. Sjur Mo, Senior Staff Production Engineer and
 					Ph.D in applied physics, supervised and offered great insight into numerically
 					solving physical systems.
@@ -119,7 +142,7 @@
 		<!-- NTNU -->
 		<div class="py-5 row justify-content-md-center">
 			<div class="col col-md-3">
-				<div id="ntnu">
+				<div	 id="ntnu">
 					<a href="http://www.ntnu.no">
 						<img class="center-fit logoimg" src="ntnu_alt_versjon_uten_slagord.png">
 					</a>
@@ -206,234 +229,174 @@
 				</p>
 			</div>
 		</div>
-
-	<!-- Pre UiT -->
-	<div class="py-5 m-0 row justify-content-md-center">
-		<div class="col-5">
-			<h3>Prior to UiT</h3>
-		</div>
 	</div>
-</div>
 </section>
 
 
 <section id="research" class="waypoint">
-  <div class="white_back">
-    <h1>Master thesis</h1>
-    <p>My thesis is titled: <i>Hamiltonian Monte Carlo for inferring the finite-dimensional parameter space
-      of a one- dimensional model of heat pulses propagating in fluid flow</i></p>
-    <img class="model1d" src="1d_model.png" alt="1d model">
-  </div>
+  	<div class="white_back">
+		<h1>Research</h1>
+ 	   <h1>Master thesis</h1>
+ 	   <p>My thesis is titled: <i>Hamiltonian Monte Carlo for inferring the finite-dimensional parameter space
+ 	   of a one- dimensional model of heat pulses propagating in fluid flow</i></p>
+ 	   <img class="model1d" src="1d_model.png" alt="1d model">
+  	</div>
 </section>
 
+<div class="container">
 <section id="projects" class="waypoint">
-<h1>Projects</h1>
-<p>Things i do, not because they are easy, but usually because i thought they would be.</p>
+	<h1>Projects</h1>
+	<p>Things i do, not because they are easy, but usually because i thought they would be.</p>
 
-<div class="py-5 m-0 row justify-content-md-center">
-	<div class="col-5">
-		<h4>Athos</h4>
-		Wellstarter needed a system to individually track each component in systems sold to customers and installed in oil wells.
-		I've made an attempt at creating such a system using Python Django along with PostgreSQL. The full list of technologies
-		in the stack are:
+	<div class="py-5 m-0 row justify-content-md-center">
+		<div class="col-5">
+			<h4>Force and strain measurements on a service boat</h4>
 
-		<ul>
-			<li>Google cloud</li>
-			<li>Docker</li>
-			<li>Gunicorn</li>
-			<li>Python Django</li>
-			<li>PostgreSQL</li>
-			<li>MS Graph</li>
-			<li>Java script + JQuery</li>
-			<li>CSS + bootstrap 4</li>
-			<li>HTML5</li>
-		</ul>
-
-		Central to the backend is a recursive table structure defining individual components and assemblies.
-		A corresponding recursive structure represents actual components that can be acquired throigh purchase orders
-		or work orders. Components are tracked by connecting with a timestamp and an event which can for example be
-		the component being destroyed in a test, made part of an assembly or passing through a country.
-		Purchase orders for assemblies can include components sent from Wellstarter storage.
-		A system for registering tests and tests results is also implemented including a micro-service for uploading
-		live data from experiments and tests. Other features
+	        I was assigned the role of project leader for a project aimed at measuring the forces and strain in the tunnel
+	        and around the crane foundation of a 15x12 meter catamaran. This also put me in the role of co-supervisor 
+	        for the master thesis of one of Moen Marin's student employees.
+		
+		</div>
 	</div>
-</div>
 
-<div class="py-5 m-0 row justify-content-md-center">
-	<div class="col-5">
-		<h4>Home automation</h4>
-		<ul>
-			<li>Github</li>
-			<li>Tools: html, javascript, jquery, css, bootstrap5</li>
-			<li>Hardware: Raspberry pi, UPS,
-			<li>Description</li>
-			<li>State machines: Home/away, coffe machine, lighting etc.</li>
-		</ul>
-			I started building a system at a family cabin in 2017 with a hardware stack
-			constisting of a raspberry pi, a usb z-wave stick and a various z-wave compatible sensors.
-			I set up homeassistant using Docker and published the site using Nginx.
-			In the years since the system has grown to encompass 2 cabins and my family home
-			with the list of hardware now being:
-			<ul>
-				<li>2 Asus barebone machines</li>
-				<li>2 UPS'es</li>
-				<li>7 raspberry pi's</li>
-				<li>5 pi cameras</li>
-				<li>7 multisensors (temperature, PIR, light, pressure, humidity)</li>
-				<li>8 smoke detectors, 5 with temperature sensor</li>
-				<li>6 wall plugs</li>
-				<li>12 thermostats</li>
-				<li>1 weather station</li>
+	<div class="py-5 m-0 row justify-content-md-center">
+		<div class="col-5">
+			<h4>Smart Support</h4>
+		
+	        Together with a senior developer, <a href="hhttps://github.com/asbjorn">Asbjørn Fellinghaug</a>, I built a cloud
+	        pipeline for storing data collected from boats in ScaleAQ's Elastic Search database. My main responsibility in
+	        this project was developing the API for accessing both raw data and statistics. The tech stack for this project is:
+
+		    <ul>
+			    <li>Julia</li>
+			    <li>Google Cloud</li>
+			    <li>Elastic Search</li>
 			</ul>
-			The 5 pi's running cameras either livestream video or capture image/video on request.
-			One of the cabins depend on gsm/4g making livestreaming a bit costly datawise.
-			The 3 homes each have a dedicated server with the 2 cabins having UPS'es and using
-			barebone machines rather than pi's. This is partly due to the weakness of the sd-card, causing
-			the pi's to suddenly crash after a few years, always when noone are present.
-			The software stack for the servers at each home are:
-			<ul>
-				<li>Docker</li>
-				<li>Homeassistant</li>
-				<li>PostgreSQL</li>
-				<li>Nginx (except for the cabin on mobile net)</li>
-			<ul>
-	</div>
-</div>
-<div class="py-5 m-0 row justify-content-md-center">
-<div id="ex-020" class="stage" style="width: 800px; height: 400px;">
-	<div class="fig" style="left: 80px; top: 120px;">
-		<img id="wifi_block" src="wifi_logo.svg.png" alt="wifi_logo.svg.png" width="80px">
-	</div>
-	<div class="fig" style="left: 360px; top: 0px;">
-		<img id="zwave_block" src="zwave.png" alt="zwave.png" width="80px">
-	</div>
-	<div class="fig" style="left: 10px; top: 200px;">
-		<img id="mqtt_block" src="mqtt-logo.png" alt="mqtt-logo.png" width="80px">
-	</div>
-  <div class="fig" style="left: 80px; top: 320px;">
-    <img id="hass_block" src="hass_logo.png" alt="hass_logo.png" width="80px">
-  </div>
-	<div class="fig" style="left: 480px; top: 80px;">
-		<img id="hass_block_2" src="hass_logo.png" alt="hass_logo2.png" width="80px">
-	</div>
-	<div class="fig" style="left: 720px; top: 10px;">
-		<img id="telegram_block" src="telegram_logo.png" alt="telegram_logo.png" width="80px">
-	</div>
-	<div class="fig" style="left: 520px; top: 10px;">
-		<img id="api_block" src="api_logo.png" alt="api_logo.png" width="80px">
-	</div>
-</div>
-</div>
 
-<div class="py-5 m-0 row justify-content-md-center">
-	<div class="col-5">
-		<h4>Cloud transfer</h4>
-		<ul>
-			<li>Tools</li>
-			<li>Services: website, database, backups, email server, email lists, sms server, docker, nginx</li>
-			<li>Description</li>
-		</ul>
+	        The most curious choice here is probably Julia for the API. Honestly i missed writing code in Julia
+	        and i strongly believe it to be a good choice for handling large amounts of data efficiently. Moreover Julia
+	        is an excellent language for machine learning making it an excellent all-in-one choice for an API providing
+	        big data analytics.
+		</div>
 	</div>
-</div>
+
+	<div class="py-5 m-0 row justify-content-md-center">
+		<div class="col-5">
+			<h4>mLink Monitor</h4>
+
+	        Starting in Moen Marin i quickly became responsible for our edge offering, mLink Monitor.
+	        This solution was plagued by badly integrated and unsuitable third party software
+	        meant to aid in transfer of data and storage in the cloud. With support from a senior developer
+	        I provided the outline for a dockerized architecture with the aim of having a set of microservices, 
+	        each performing a single task. The techonologies included are mainly:
+
+			<ul>
+				<li>Revolution Pi Core & Compact</li>
+				<li>Docker</li>
+				<li>PostgreSQL & TimescaleDB</li>
+				<li>Golang</li>
+				<li>Canbus</li>
+				<li>Modbus</li>
+				<li>MQTT</li>
+			</ul>
+
+	        Golang was chosen as the language to use for each service due to its very slim hardware footprint and excellent multithreading capabilities. 
+	        With the help of a team of students working part-time we built modules to read data from each available data source 
+	        onboard the ships such as engines, generators, weather station, navigation systems and more.
+
+		</div>
+	</div>
+
+	<div class="py-5 m-0 row justify-content-md-center">
+		<div class="col-5">
+			<h4>Athos</h4>
+			Wellstarter needed a system to individually track each component in systems sold to customers and installed in oil wells.
+			I've made an attempt at creating such a system using Python Django along with PostgreSQL. The full list of technologies
+			in the stack are:
+
+			<ul>
+				<li>Google cloud</li>
+				<li>Docker</li>
+				<li>Gunicorn</li>
+				<li>Python Django</li>
+				<li>PostgreSQL</li>
+				<li>MS Graph</li>
+				<li>Java script + JQuery</li>
+				<li>CSS + bootstrap 4</li>
+				<li>HTML5</li>
+			</ul>
+
+			Central to the backend is a recursive table structure defining individual components and assemblies.
+			A corresponding recursive structure represents actual components that can be acquired throigh purchase orders
+			or work orders. Components are tracked by connecting with a timestamp and an event which can for example be
+			the component being destroyed in a test, made part of an assembly or passing through a country.
+			Purchase orders for assemblies can include components sent from Wellstarter storage.
+			A system for registering tests and tests results is also implemented including a micro-service for uploading
+			live data from experiments and tests. Other features
+		</div>
+	</div>
+
+	<div class="py-5 m-0 row justify-content-md-center">
+		<div class="col-5">
+			<h4>Home automation</h4>
+			<ul>
+				<li>Github</li>
+				<li>Tools: html, javascript, jquery, css, bootstrap5</li>
+				<li>Hardware: Raspberry pi, UPS,
+				<li>Description</li>
+				<li>State machines: Home/away, coffe machine, lighting etc.</li>
+			</ul>
+				I started building a system at a family cabin in 2017 with a hardware stack
+				constisting of a raspberry pi, a usb z-wave stick and a various z-wave compatible sensors.
+				I set up homeassistant using Docker and published the site using Nginx.
+				In the years since the system has grown to encompass 2 cabins and my family home
+				with the list of hardware now being:
+				<ul>
+					<li>2 Asus barebone machines</li>
+					<li>2 UPS'es</li>
+					<li>7 raspberry pi's</li>
+					<li>5 pi cameras</li>
+					<li>7 multisensors (temperature, PIR, light, pressure, humidity)</li>
+					<li>8 smoke detectors, 5 with temperature sensor</li>
+					<li>6 wall plugs</li>
+					<li>12 thermostats</li>
+					<li>1 weather station</li>
+				</ul>
+				The 5 pi's running cameras either livestream video or capture image/video on request.
+				One of the cabins depend on gsm/4g making livestreaming a bit costly datawise.
+				The 3 homes each have a dedicated server with the 2 cabins having UPS'es and using
+				barebone machines rather than pi's. This is partly due to the weakness of the sd-card, causing
+				the pi's to suddenly crash after a few years, always when noone are present.
+				The software stack for the servers at each home are:
+				<ul>
+					<li>Docker</li>
+					<li>Homeassistant</li>
+					<li>PostgreSQL</li>
+					<li>Nginx (except for the cabin on mobile net)</li>
+				<ul>
+		</div>
+	</div>
+
+	<div class="py-5 m-0 row justify-content-md-center">
+		<div class="col-5">
+			<h4>Cloud transfer</h4>
+
+	        As team leader of 
+
+			<ul>
+				<li>Tools</li>
+				<li>Services: website, database, backups, email server, email lists, sms server, docker, nginx</li>
+				<li>Description</li>
+			</ul>
+		</div>
+	</div>
 
 
 
 </section>
+</div>
 
-<script src="scripts.js" type="text/javascript" language="JavaScript"></script>
-
-<script>
-window.addEventListener('load', function() {
-  'use strict';
-
-  new LeaderLine(
-    document.getElementById('hass_block'),
-    document.getElementById('wifi_block'),
-    {
-      color: '#11ABB0',
-      startPlug: 'arrow1',
-      startPlugColor: '#11ABB0',
-      endPlugColor: '#11ABB0',
-      startPlugSize: 1.5,
-      endPlugSize: 1.5,
-    }
-  );
-
-  new LeaderLine(
-    document.getElementById('hass_block_2'),
-    document.getElementById('telegram_block'),
-    {
-      size: 8,
-      startPlugColor: '#ffff05',
-      endPlugColor: '#0c7d1a',
-      gradient: true
-    }
-  );
-
-  new LeaderLine(
-    document.getElementById('zwave_block'),
-    document.getElementById('mqtt_block'),
-    {
-      color: 'black',
-      startPlug: 'disc',
-      endPlug: 'hand',
-      path: 'grid'
-    }
-  );
-
-  new LeaderLine(
-    document.getElementById('ex-020-h'),
-    document.getElementById('hass_block_2'),
-    {
-      size: 6,
-      outlineColor: '#1e71ef',
-      outline: true,
-      endPlugOutline: true,
-      dash: true,
-      path: 'arc',
-      startSocket: 'left',
-      endSocket: 'bottom'
-    }
-  );
-
-  new LeaderLine(
-    document.getElementById('hass_block'),
-    document.getElementById('zwave_block'),
-    {
-      color: '#ecf373',
-      dropShadow: true,
-      endSocket: 'bottom'
-    }
-  );
-
-  var lineC = new LeaderLine(
-    document.getElementById('zwave_block'),
-    document.getElementById('wifi_block'),
-    {
-      path: 'straight'
-      // dash: {animation: true}
-    }
-  );
-  inView('#ex-020')
-    .on('enter', function() { lineC.dash = {animation: true}; })
-    .on('exit', function() { lineC.dash = false; });
-
-  new LeaderLine(
-    document.getElementById('hass_block_2'),
-    document.getElementById('zwave_block'),
-    {
-      startPlug: 'arrow1',
-      startSocket: 'left',
-      endSocket: 'right',
-      startSocketGravity: [-140, -80],
-      endSocketGravity: [220, 180]
-    }
-  );
-
-
-});
-
-</script>
+<script src="scripts.js"></script>
 
 </body>
 </html>
